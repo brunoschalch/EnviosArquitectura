@@ -1,0 +1,6 @@
+Creational: Builder para la clase Envio.
+Behavioral: iterator para las etiquetas de Envio. En lugar de regresar un set con las etiquetas, se regresa una instancia de "Iterator()". Con esto se logra la meta del patrón de diseño, que es desacoplar los algoritmos y las estructuras de datos de los contenedores.
+Structural: Bridge
+Dado que se prevee que puede haber más de un proveedor de envíos por zona, y cada uno contar con su calculador de precios, se diseñó la clase abstracta "Zona" que a través del uso del patrón "Bridge", incluirá cada zona y a la vez cada zona podrá tener más de un proveedor de envíos con comportamiento diferente y cambiante. CostosAPI es el implementor, PastesGoAPi, EnvioExpressAPI y BombaEnviosAPI son concrete implementors. Zona es Abstraction y ZonaSonora, ZonaYucatan y ZonaPachuca son Refined Abstractions.
+
+cosas pendientes para modelar: "Un envio solo puede estar asignado a una ruta en especial por día."
