@@ -1,4 +1,5 @@
 import java.util.Iterator;
+
 public class EnvioBuildDirector {
     private EnvioBuilder builder;
 
@@ -20,15 +21,12 @@ public class EnvioBuildDirector {
 
     public static void main(final String[] arguments) {
         final EnvioBuilder builder = new EnvioBuilderImpl();
-
         final EnvioBuildDirector carBuildDirector = new EnvioBuildDirector(builder);
-
-		Envio envio = carBuildDirector.construct();
+        Envio envio = carBuildDirector.construct();
         //System.out.println(envio);
+        Iterator<String> iterator = envio.etiquetasIterator();
 
-         Iterator<String> iterator = envio.etiquetasIterator();
-
-   		while (iterator.hasNext()) {
+   		  while (iterator.hasNext()) {
             String etiqueta = iterator.next();
             System.out.println(etiqueta);
             iterator.remove();
@@ -36,7 +34,5 @@ public class EnvioBuildDirector {
 
         Zona pachuca = new ZonaPachuca(new PastesGoAPI());
         System.out.println(pachuca.calcularCostoEnvio(envio));
-
-
     }
 }

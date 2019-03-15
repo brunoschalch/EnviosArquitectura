@@ -1,7 +1,7 @@
 /**
  * Represents the product created by the builder.
  */
- import java.util.*;
+import java.util.*;
 
 class Envio {
 
@@ -14,77 +14,75 @@ class Envio {
     private HashSet<String> etiquetas;
 
     public Iterator<String> etiquetasIterator() {
-		return etiquetas.iterator();
-	}
+      return etiquetas.iterator();
+  	}
 
-	public void addEtiqueta(String etiqueta){
-		this.etiquetas.add(etiqueta);
-	}
+  	public void addEtiqueta(String etiqueta){
+  		this.etiquetas.add(etiqueta);
+  	}
 
-	public void setEtiquetas(HashSet<String> etiquetas) {
-		this.etiquetas = etiquetas;
-	}
+  	public void setEtiquetas(HashSet<String> etiquetas) {
+  		this.etiquetas = etiquetas;
+  	}
 
-	public HashSet<String> getEtiquetas() {
-			return this.etiquetas;
-	}
+  	public HashSet<String> getEtiquetas() {
+  		return this.etiquetas;
+  	}
 
     public String getID() {
-        return ID;
+      return ID;
     }
 
     public void setID(String ID) {
-        this.ID = ID;
+      this.ID = ID;
     }
 
     public String getDireccionEntrega() {
-        return direccionEntrega;
+      return direccionEntrega;
     }
 
     public void setDireccionEntrega(String direccionEntrega) {
-        this.direccionEntrega = direccionEntrega;
+      this.direccionEntrega = direccionEntrega;
     }
 
     public int getCpEntrega() {
-        return CpEntrega;
+      return CpEntrega;
     }
 
     public void setCpEntrega(int CpEntrega) {
-        this.CpEntrega = CpEntrega;
+      this.CpEntrega = CpEntrega;
     }
 
     public String getDireccionRemitente() {
-        return direccionRemitente;
+      return direccionRemitente;
     }
 
     public void setDireccionRemitente(String direccionRemitente) {
-        this.direccionRemitente = direccionRemitente;
+      this.direccionRemitente = direccionRemitente;
     }
 
     public int getCpRemitente() {
-        return CpRemitente;
+      return CpRemitente;
     }
 
     public void setCpRemitente(int CpRemitente) {
-        this.CpRemitente = CpRemitente;
+      this.CpRemitente = CpRemitente;
     }
 
     public float getPeso() {
-        return peso;
+      return peso;
     }
 
     public void setPeso(float peso) {
-        this.peso = peso;
+      this.peso = peso;
     }
 
     public Envio() {
-		etiquetas = new HashSet<String>();
+		  etiquetas = new HashSet<String>();
     }
 
     @Override
     public String toString(){
-		return "Envio: \n" + ID + "\n"
-		+direccionEntrega;
-	}
-
+      return "Envio: \n" + ID + "\n"+direccionEntrega;
+	  }
 }

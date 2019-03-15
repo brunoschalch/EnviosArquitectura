@@ -13,7 +13,6 @@ class RFC {
 	}
 
 	public String getDireccionFiscal() {
-			return direccionFiscal;
+		return direccionFiscal;
 	}
-
 }

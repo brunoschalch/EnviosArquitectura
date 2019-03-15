@@ -20,10 +20,10 @@ class EnvioBuilderImpl implements EnvioBuilder {
         return envio;
     }
 
-     @Override
-	    public EnvioBuilder addEtiqueta(final String etiqueta) {
-	        envioTmp.addEtiqueta(etiqueta);
-	        return this;
+    @Override
+	  public EnvioBuilder addEtiqueta(final String etiqueta) {
+	       envioTmp.addEtiqueta(etiqueta);
+	       return this;
     }
 
     @Override
