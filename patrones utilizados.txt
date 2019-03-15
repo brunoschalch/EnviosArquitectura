@@ -1,6 +1,17 @@
-Creational: Builder para la clase Envio.
-Behavioral: iterator para las etiquetas de Envio. En lugar de regresar un set con las etiquetas, se regresa una instancia de "Iterator()". Con esto se logra la meta del patrón de diseño, que es desacoplar los algoritmos y las estructuras de datos de los contenedores.
-Structural: Bridge
-Dado que se prevee que puede haber más de un proveedor de envíos por zona, y cada uno contar con su calculador de precios, se diseñó la clase abstracta "Zona" que a través del uso del patrón "Bridge", incluirá cada zona y a la vez cada zona podrá tener más de un proveedor de envíos con comportamiento diferente y cambiante. CostosAPI es el implementor, PastesGoAPi, EnvioExpressAPI y BombaEnviosAPI son concrete implementors. Zona es Abstraction y ZonaSonora, ZonaYucatan y ZonaPachuca son Refined Abstractions.
+-Creational: Builder para la clase Envio.
 
-cosas pendientes para modelar: "Un envio solo puede estar asignado a una ruta en especial por día."
+-Behavioral: Iterator para las etiquetas de Envio. En lugar de regresar un set
+con las etiquetas, se regresa una instancia de "Iterator()". Con esto se logra
+la meta del patrÃ³n de diseÃ±o, que es desacoplar los algoritmos y las estructuras
+de datos de los contenedores.
+
+-Structural: Bridge. Dado que se prevee que puede haber mÃ¡s de un proveedor de
+envÃ­os por zona, y cada uno contar con su calculador de precios, se diseÃ±Ã³ la
+clase abstracta "Zona" que a travÃ©s del uso del patrÃ³n "Bridge", incluirï¿½ cada
+zona y a la vez cada zona podrÃ¡ tener mÃ¡s de un proveedor de envï¿½os con
+comportamiento diferente y cambiante. CostosAPI es el implementor, PastesGoAPi,
+EnvioExpressAPI y BombaEnviosAPI son concrete implementors. Zona es Abstraction y
+ZonaSonora, ZonaYucatan y ZonaPachuca son Refined Abstractions.
+
+cosas pendientes para modelar: "Un envio solo puede estar asignado a una ruta en
+especial por dï¿½a."

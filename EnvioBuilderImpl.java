@@ -16,6 +16,8 @@ class EnvioBuilderImpl implements EnvioBuilder {
         envio.setDireccionRemitente(envioTmp.getDireccionRemitente());
         envio.setCpRemitente(envioTmp.getCpRemitente());
         envio.setPeso(envioTmp.getPeso());
+        envio.setTipo(envioTmp.getTipo());
+        envio.setDimensiones(envioTmp.getDimensiones());
         envio.setEtiquetas(envioTmp.getEtiquetas());
         return envio;
     }
@@ -62,4 +64,15 @@ class EnvioBuilderImpl implements EnvioBuilder {
         return this;
     }
 
+    @Override
+    public EnvioBuilder setTipo(final String tipo) {
+        envioTmp.setTipo(tipo);
+        return this;
+    }
+
+    @Override
+    public EnvioBuilder setDimensiones(final int dimensiones) {
+        envioTmp.setDimensiones(dimensiones);
+        return this;
+    }
 }

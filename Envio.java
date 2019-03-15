@@ -12,6 +12,8 @@ class Envio {
     private int CpRemitente;
     private float peso;
     private HashSet<String> etiquetas;
+    private String tipo;
+    private int dimensiones;
 
     public Iterator<String> etiquetasIterator() {
       return etiquetas.iterator();
@@ -75,6 +77,22 @@ class Envio {
 
     public void setPeso(float peso) {
       this.peso = peso;
+    }
+
+    public String getTipo() {
+      return tipo;
+    }
+
+    public void setTipo(String tipo) {
+      this.tipo = tipo;
+    }
+
+    public int getDimensiones() {
+      return dimensiones;
+    }
+
+    public void setDimensiones(int dimensiones) {
+      this.dimensiones = dimensiones;
     }
 
     public Envio() {

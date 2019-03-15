@@ -15,5 +15,9 @@ interface EnvioBuilder {
 
     EnvioBuilder setPeso(final float peso);
 
+    EnvioBuilder setTipo(final String tipo);
+
+    EnvioBuilder setDimensiones(final int dimensiones);
+
     EnvioBuilder addEtiqueta(final String etiqueta);
 }

@@ -16,6 +16,8 @@ public class EnvioBuildDirector {
                       .setPeso(45.2f)
                       .addEtiqueta("Etiqueta1")
                       .addEtiqueta("Etiqueta2")
+                      .setTipo("caja")
+                      .setDimensiones(200)
                       .build();
     }
 
