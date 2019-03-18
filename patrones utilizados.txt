@@ -5,7 +5,7 @@ con las etiquetas, se regresa una instancia de "Iterator()". Con esto se logra
 la meta del patrón de diseño, que es desacoplar los algoritmos y las estructuras
 de datos de los contenedores.
 
--Structural: Bridge. Dado que se prevee que puede haber más de un proveedor de
+-Structural: Bridge. Dado que se prevé que puede haber más de un proveedor de
 envíos por zona, y cada uno contar con su calculador de precios, se diseñó la
 clase abstracta "Zona" que a través del uso del patrón "Bridge", incluir� cada
 zona y a la vez cada zona podrá tener más de un proveedor de env�os con

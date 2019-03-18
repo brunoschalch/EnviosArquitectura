@@ -2,7 +2,7 @@ import java.util.*;
 class Cliente {
 
 	private RFC rfc;
-	private HashSet<Envio> envios;
+	private HashSet<EnvioBuilder> envios;
 
 	public Cliente(RFC datos) {
 		this.rfc = datos;
@@ -16,11 +16,11 @@ class Cliente {
 		this.rfc = datos;
 	}
 
-	public void setEnvios(HashSet<Envio> envios) {
+	public void setEnvios(HashSet<EnvioBuilder> envios) {
 		this.envios = envios;
 	}
 
-	public HashSet<Envio> getEnvios() {
+	public HashSet<EnvioBuilder> getEnvios() {
 		return envios;
 	}
 

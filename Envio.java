@@ -27,10 +27,6 @@ class Envio {
   		this.etiquetas = etiquetas;
   	}
 
-  	public HashSet<String> getEtiquetas() {
-  		return this.etiquetas;
-  	}
-
     public String getID() {
       return ID;
     }
@@ -101,6 +97,6 @@ class Envio {
 
     @Override
     public String toString(){
-      return "Envio: \n" + ID + "\n"+direccionEntrega;
+      return "Envio: \n" + ID + "\n"+ direccionEntrega;
 	  }
 }
