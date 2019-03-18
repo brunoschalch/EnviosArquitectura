@@ -1,23 +1,22 @@
-
 interface EnvioBuilder {
 
-    Envio build();
+    public Envio build();
 
-    EnvioBuilder setID(final String ID);
+    public EnvioBuilder setID(final String ID);
 
-    EnvioBuilder setDireccionEntrega(final String direccionEntrega);
+    public EnvioBuilder setDireccionEntrega(final String direccionEntrega);
 
-    EnvioBuilder setCpEntrega(final int CpEntrega);
+    public EnvioBuilder setCpEntrega(final int CpEntrega);
 
-    EnvioBuilder setDireccionRemitente(final String direccionRemitente);
+    public EnvioBuilder setDireccionRemitente(final String direccionRemitente);
 
-    EnvioBuilder setCpRemitente(final int CpRemitente);
+    public EnvioBuilder setCpRemitente(final int CpRemitente);
 
-    EnvioBuilder setPeso(final float peso);
+    public EnvioBuilder setPeso(final float peso);
 
-    EnvioBuilder setTipo(final String tipo);
+    public EnvioBuilder setTipo(final String tipo);
 
-    EnvioBuilder setDimensiones(final int dimensiones);
+    public EnvioBuilder setDimensiones(final int dimensiones);
 
-    EnvioBuilder addEtiqueta(final String etiqueta);
+    public EnvioBuilder addEtiqueta(final String etiqueta);
 }

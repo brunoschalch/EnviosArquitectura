@@ -1,5 +1,4 @@
-
-class EnvioBuilderImpl implements EnvioBuilder {
+public class EnvioBuilderImpl implements EnvioBuilder {
 
     private Envio envioTmp;
 

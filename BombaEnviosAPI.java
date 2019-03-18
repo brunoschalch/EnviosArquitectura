@@ -2,6 +2,7 @@ class BombaEnviosAPI implements CostosAPI {
     private final int DOCUMENTOS = 42;
     private final int CAJA = 20;
 
+    @Override
     public float calcularCostoDeEnvio(final Envio envio) {
         float peso = envio.getPeso();
         String tipo = envio.getTipo();

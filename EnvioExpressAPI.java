@@ -4,6 +4,7 @@ class EnvioExpressAPI implements CostosAPI {
     private final int EXCESO = 500;
     private final int DIM_PERMITIDAS = 90;
 
+    @Override
     public float calcularCostoDeEnvio(final Envio envio) {
         float peso = envio.getPeso();
         String tipo = envio.getTipo();

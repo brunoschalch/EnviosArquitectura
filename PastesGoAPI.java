@@ -4,6 +4,7 @@ class PastesGoAPI implements CostosAPI {
     private final int EXCESO = 600;
     private final int DIM_PERMITIDAS = 100;
 
+    @Override
     public float calcularCostoDeEnvio(final Envio envio) {
         float peso = envio.getPeso();
         String tipo = envio.getTipo();

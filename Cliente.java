@@ -1,8 +1,8 @@
 import java.util.*;
 class Cliente {
 
-	RFC rfc;
-	HashSet<Envio> envios;
+	private RFC rfc;
+	private HashSet<Envio> envios;
 
 	public Cliente(RFC datos) {
 		this.rfc = datos;
